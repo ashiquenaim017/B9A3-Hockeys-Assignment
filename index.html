@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind and daisy ui cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font manrope -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "color-heading": "#131318",
+              "color-text": "#13131863",
+              "primary-color": "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <!-- header section -->
+    <header class="container mx-auto px-3 lg:px-6 mt-4">
+      <!-- navbar section -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a class="text-primary-color font-bold">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold"
+              >Hockey<span class="text-primary-color">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-primary-color font-bold">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-5">
+            <i class="fa-solid fa-magnifying-glass hidden lg:flex"></i>
+            <a class="btn bg-primary-color text-white">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+
+      <div class="my-10">
+        <div class="carousel w-full h-[200px] lg:h-[500px] rounded-2xl">
+          <!-- 1st slider -->
+
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-[url('./images/1.png')] bg-no-repeat bg-center bg-cover"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- 2nd slider -->
+
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-[url('./images/1.png')] bg-no-repeat bg-center bg-cover"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- 3rd slider -->
+
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-[url('./images/1.png')] bg-no-repeat bg-center bg-cover"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- 4th slider -->
+
+          <div
+            id="slide4"
+            class="carousel-item relative w-full bg-[url('./images/1.png')] bg-no-repeat bg-center bg-cover"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner-xtra section -->
+        <div
+          class="bg-black w-full lg:w-[45%] p-5 space-y-4 rounded-2xl lg:-translate-y-52 lg:translate-x-[650px]"
+        >
+          <h1 class="text-xl text-white font-bold">
+            Meet all the heroes from the field
+          </h1>
+          <p class="text-base text-[#FFFFFF99] font-medium">
+            These players come from different eras and have left a lasting
+            impact on the sport of hockey. There are, of course, many more
+            heroes and legends in the world of hockey, each contributing to the
+            game in their unique way.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-3 lg:px-6 mt-12 lg:-mt-28">
+      <!-- Professional Hockeys Club -->
+      <section class="space-y-5">
+        <div
+          class="text-center flex flex-col items-center space-y-4 mb-10 lg:mb-20"
+        >
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-color-heading">
+            Professional Hockeys Club
+          </h3>
+          <p class="text-base text-color-text font-medium w-full lg:w-1/2">
+            Professional hockey clubs are the lifeblood of the sport, serving as
+            the focal points of competition, community, and fervent fan support.
+          </p>
+        </div>
+        <!-- progress container -->
+        <div class="flex flex-col lg:flex-row gap-5">
+          <!-- 1st progress -->
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-primary-color text-2xl font-extrabold"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h5 class="text-xl font-semibold">Prayer Facility</h5>
+            <p class="text-base text-color-text">
+              Whether located within a religious institution, workplace, or
+              community setting.
+            </p>
+          </div>
+          <!-- 2nd progress -->
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-[#49D293] text-2xl font-extrabold"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h5 class="text-xl font-semibold">Experienced Coach</h5>
+            <p class="text-base text-color-text">
+              Whether located within a religious institution, workplace, or
+              community setting.
+            </p>
+          </div>
+          <!-- 3rd progress -->
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-[#FFB546] text-2xl font-extrabold"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h5 class="text-xl font-semibold">Senior Player</h5>
+            <p class="text-base text-color-text">
+              Whether located within a religious institution, workplace, or
+              community setting.
+            </p>
+          </div>
+          <!-- 4th progress -->
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-[#4C8DF1] text-2xl font-extrabold"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h5 class="text-xl font-semibold">Training Ground</h5>
+            <p class="text-base text-color-text">
+              Whether located within a religious institution, workplace, or
+              community setting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Sections -->
+
+      <section class="mt-20">
+        <div
+          class="text-center flex flex-col items-center space-y-4 mb-10 lg:mb-20"
+        >
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-color-heading">
+            Program Sections
+          </h3>
+          <p class="text-base text-color-text font-medium w-full lg:w-1/2">
+            They often become living encyclopedias of the game, capable of
+            imparting strategic insights, tactical nuances, and a deep
+            understanding of the sport's history.
+          </p>
+        </div>
+        <!-- grid container -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 grid-rows-3 lg:grid-rows-5 gap-5"
+        >
+          <!-- 1st grid -->
+          <div
+            class="bg-[url('./images/2.png')] row-span-1 lg:row-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
+          >
+            <div class="space-y-4">
+              <h3 class="text-white text-2xl font-extrabold">Junior Program</h3>
+              <p class="text-white text-base font-medium">
+                Senior players play a pivotal role in mentoring younger
+                athletes, offering guidance on and off the field.
+              </p>
+              <button
+                class="btn text-white font-bold bg-primary-color border-none w-[150px]"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <!-- 2nd grid -->
+          <div
+            class="bg-[url('./images/3.png')] row-span-1 lg:row-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
+          >
+            <div class="space-y-4">
+              <h3 class="text-white text-2xl font-extrabold">
+                Teenager Program
+              </h3>
+              <p class="text-white text-base font-medium">
+                Senior players play a pivotal role in mentoring younger
+                athletes, offering guidance on and off the field.
+              </p>
+              <button
+                class="btn text-white font-bold bg-primary-color border-none w-[150px]"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <!-- 3rd grid -->
+          <div
+            class="bg-[url('./images/4.png')] row-span-1 lg:row-span-3 lg:col-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
+          >
+            <div class="space-y-4 w-full lg:w-1/2">
+              <h3 class="text-white text-2xl font-extrabold">
+                Professional Program
+              </h3>
+              <p class="text-white text-base font-medium">
+                Senior players play a pivotal role in mentoring younger
+                athletes, offering guidance on and off the field.The mental
+                aspect of sports is also cultivated on the training ground.
+              </p>
+              <button
+                class="btn text-white font-bold bg-primary-color border-none w-[150px]"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our New Products Section -->
+      <section class="mt-20">
+        <div
+          class="text-center flex flex-col items-center space-y-4 mb-10 lg:mb-20"
+        >
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-color-heading">
+            Our New Products
+          </h3>
+          <p class="text-base text-color-text font-medium w-full lg:w-1/2">
+            Emphasize the quality and durability of your products. Hockey
+            equipment needs to withstand intense use, so customers often
+            prioritize items that are well-built and can endure regular play.
+          </p>
+        </div>
+
+        <!-- product container -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- 1st product -->
+          <div class="bg-[#FFF] p-4 rounded-xl shadow-lg">
+            <div class="hero">
+              <div class="flex flex-col lg:flex-row gap-3">
+                <img
+                  src="./images/5.png"
+                  class="max-w-sm rounded-xl "
+                />
+                <!-- content -->
+                <div class="space-y-4">
+                  <div class="rating gap-4">
+                    <div class="flex gap-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <p class="text-color-text">5.0</p>
+                    </div>
+                    <p class="text-color-text flex gap-2"><img src="./images/Frame (1).png" alt="">20</p>
+                    <p class="text-color-text flex gap-2"><img src="./images//Frame (2).png" alt="">200</p>
+                  </div> 
+                  <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                  <p class="text-base text-color-text">
+                    Consider offering a diverse range of products to cater to
+                    different customer preferences and needs.
+                  </p>
+                  <div class="flex gap-3">
+                    <p class="text[18px] text-primary-color font-extrabold"
+                      >Price - $22.00</p
+                    >
+                    <p class="text-base text-color-text flex gap-1"
+                      ><img
+                        src="./images/Frame.png"
+                        alt=""
+                      />Delivery Fee:Free</p
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2nd product -->
+
+          <div class="bg-[#FFF] p-4 rounded-xl shadow-lg">
+            <div class="hero">
+              <div class="flex flex-col lg:flex-row gap-3">
+                <img
+                  src="./images/6.png"
+                  class="max-w-sm rounded-xl "
+                />
+                <!-- content -->
+                <div class="space-y-4">
+                  <div class="rating gap-4">
+                    <div class="flex gap-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <p class="text-color-text">5.0</p>
+                    </div>
+                    <p class="text-color-text flex gap-2"><img src="./images/Frame (1).png" alt="">20</p>
+                    <p class="text-color-text flex gap-2"><img src="./images//Frame (2).png" alt="">200</p>
+                  </div> 
+                  <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                  <p class="text-base text-color-text">
+                    Consider offering a diverse range of products to cater to
+                    different customer preferences and needs.
+                  </p>
+                  <div class="flex gap-3">
+                    <p class="text[18px] text-primary-color font-extrabold"
+                      >Price - $22.00</p
+                    >
+                    <p class="text-base text-color-text flex gap-1"
+                      ><img
+                        src="./images/Frame.png"
+                        alt=""
+                      />Delivery Fee:Free</p
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 3rd product -->
+
+          <div class="bg-[#FFF] p-4 rounded-xl shadow-lg">
+            <div class="hero">
+              <div class="flex flex-col lg:flex-row gap-3">
+                <img
+                  src="./images/7.png"
+                  class="max-w-sm rounded-xl "
+                />
+                <!-- content -->
+                <div class="space-y-4">
+                  <div class="rating gap-4">
+                    <div class="flex gap-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <p class="text-color-text">5.0</p>
+                    </div>
+                    <p class="text-color-text flex gap-2"><img src="./images/Frame (1).png" alt="">20</p>
+                    <p class="text-color-text flex gap-2"><img src="./images//Frame (2).png" alt="">200</p>
+                  </div> 
+                  <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                  <p class="text-base text-color-text">
+                    Consider offering a diverse range of products to cater to
+                    different customer preferences and needs.
+                  </p>
+                  <div class="flex gap-3">
+                    <p class="text[18px] text-primary-color font-extrabold"
+                      >Price - $22.00</p
+                    >
+                    <p class="text-base text-color-text flex gap-1"
+                      ><img
+                        src="./images/Frame.png"
+                        alt=""
+                      />Delivery Fee:Free</p
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 4th product -->
+
+          <div class="bg-[#FFF] p-4 rounded-xl shadow-lg">
+            <div class="hero">
+              <div class="flex flex-col lg:flex-row gap-3">
+                <img
+                  src="./images/8.png"
+                  class="max-w-sm rounded-xl "
+                />
+                <!-- content -->
+                <div class="space-y-4">
+                  <div class="rating gap-4">
+                    <div class="flex gap-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <p class="text-color-text">5.0</p>
+                    </div>
+                    <p class="text-color-text flex gap-2"><img src="./images/Frame (1).png" alt="">20</p>
+                    <p class="text-color-text flex gap-2"><img src="./images//Frame (2).png" alt="">200</p>
+                  </div> 
+                  <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                  <p class="text-base text-color-text">
+                    Consider offering a diverse range of products to cater to
+                    different customer preferences and needs.
+                  </p>
+                  <div class="flex gap-3">
+                    <p class="text[18px] text-primary-color font-extrabold"
+                      >Price - $22.00</p
+                    >
+                    <p class="text-base text-color-text flex gap-1"
+                      ><img
+                        src="./images/Frame.png"
+                        alt=""
+                      />Delivery Fee:Free</p
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 5th product -->
+          <div class="bg-[#FFF] p-4 rounded-xl shadow-lg">
+            <div class="hero">
+              <div class="flex flex-col lg:flex-row gap-3">
+                <img
+                  src="./images/9.png"
+                  class="max-w-sm rounded-xl "
+                />
+                <!-- content -->
+                <div class="space-y-4">
+                  <div class="rating gap-4">
+                    <div class="flex gap-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <p class="text-color-text">5.0</p>
+                    </div>
+                    <p class="text-color-text flex gap-2"><img src="./images/Frame (1).png" alt="">20</p>
+                    <p class="text-color-text flex gap-2"><img src="./images//Frame (2).png" alt="">200</p>
+                  </div> 
+                  <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                  <p class="text-base text-color-text">
+                    Consider offering a diverse range of products to cater to
+                    different customer preferences and needs.
+                  </p>
+                  <div class="flex gap-3">
+                    <p class="text[18px] text-primary-color font-extrabold"
+                      >Price - $22.00</p
+                    >
+                    <p class="text-base text-color-text flex gap-1"
+                      ><img
+                        src="./images/Frame.png"
+                        alt=""
+                      />Delivery Fee:Free</p
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 6th product -->
+          <div class="bg-[#FFF] p-4 rounded-xl shadow-lg">
+            <div class="hero">
+              <div class="flex flex-col lg:flex-row gap-3">
+                <img
+                  src="./images/10.png"
+                  class="max-w-sm rounded-xl "
+                />
+                <!-- content -->
+                <div class="space-y-4">
+                  <div class="rating gap-4">
+                    <div class="flex gap-2">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <p class="text-color-text">5.0</p>
+                    </div>
+                    <p class="text-color-text flex gap-2"><img src="./images/Frame (1).png" alt="">20</p>
+                    <p class="text-color-text flex gap-2"><img src="./images//Frame (2).png" alt="">200</p>
+                  </div> 
+                  <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                  <p class="text-base text-color-text">
+                    Consider offering a diverse range of products to cater to
+                    different customer preferences and needs.
+                  </p>
+                  <div class="flex gap-3">
+                    <p class="text[18px] text-primary-color font-extrabold"
+                      >Price - $22.00</p
+                    >
+                    <p class="text-base text-color-text flex gap-1"
+                      ><img
+                        src="./images/Frame.png"
+                        alt=""
+                      />Delivery Fee:Free</p
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
