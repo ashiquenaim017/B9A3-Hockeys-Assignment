@@ -753,9 +753,9 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <!-- contact section -->
-          <div class="space-y-5 shadow-lg p-6">
+          <div class="space-y-5 shadow-lg p-4 lg:p-10">
             <div class="space-y-4 p-6 bg-[#F8FDF0] rounded-2xl">
               <img src="./images/Group 1171275317.png" alt="" />
               <p class="text-sm text-color-text">Phone Number :</p>
@@ -778,39 +778,94 @@
               </h4>
             </div>
           </div>
-            <!-- form section -->
-              <div class="col-span-2 ">
-                <form  action="">
-                   <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                    <div class="space-y-3">
-                      <label class="text-xl text-color-heading font-bold" for="name">Your Name</label> <br>
-                     <input class="rounded-xl bg-[#F8F8F8]  w-full" type="text" name="name" id="name" placeholder="Enter your full name">
-                     </div>
-  
-                     <div class="space-y-3" >
-                      <label class="text-xl text-color-heading font-bold" for="name">Your Email</label> <br>
-                     <input class="rounded-xl bg-[#F8F8F8] w-full" type="email" name="email" id="email" placeholder="Enter your email">
-                     </div>
-  
-                     <div class="space-y-3" >
-                      <label class="text-xl text-color-heading font-bold" for="name">Subject</label> <br>
-                     <input class="rounded-xl bg-[#F8F8F8]  w-full" type="text" name="sub" id="sub" placeholder="Enter your subject">
-                     </div>
-  
-                     <div class="space-y-3" >
-                      <label class="text-xl text-color-heading font-bold" for="name">Phone Number</label> <br>
-                     <input class="rounded-xl bg-[#F8F8F8]  w-full " type="text" name="phn" id="phn" placeholder="Enter your phone number">
-                     </div>
-  
-                     <div class="space-y-3 col-span-2" >
-                      <label class="text-xl text-color-heading font-bold" for="name">Message</label> <br>
-                      <textarea class="textarea w-full h-[40vh]" placeholder="Write your Message" disabled></textarea>
-                     </div>
-  
-                     <button class="btn text-xl font-bold bg-primary-color w-full col-span-2 text-white">Send Message</button>
-                   </div>
-                </form>
+          <!-- form section -->
+          <div class="lg:col-span-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <div class="space-y-3">
+                <label class="text-xl text-color-heading font-bold" for="name">
+                  Your Name
+                </label>
+
+                <input
+                  class="rounded-xl bg-[#F8F8F8] w-full py-4 lg:py-5 pl-4 lg:pl-5"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your full name"
+                />
               </div>
+
+              <div class="space-y-3">
+                <label class="text-xl text-color-heading font-bold" for="email">
+                  Your Email
+                </label>
+
+                <input
+                  class="rounded-xl bg-[#F8F8F8] w-full py-4 lg:py-5 pl-4 lg:pl-5"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div class="space-y-3">
+                <label class="text-xl text-color-heading font-bold" for="subject">
+                  Subject
+                </label>
+
+                <input
+                  class="rounded-xl bg-[#F8F8F8] w-full py-4 lg:py-5 pl-4 lg:pl-5"
+                  type="text"
+                  name="sub"
+                  id="sub"
+                  placeholder="Enter your subject"
+                />
+              </div>
+
+              <div class="space-y-3">
+                <label class="text-xl text-color-heading font-bold" for="phone">
+                  Phone Number
+                </label>
+
+                <input
+                  class="rounded-xl bg-[#F8F8F8] w-full py-4 lg:py-5 pl-4 lg:pl-5"
+                  type="text"
+                  name="phn"
+                  id="phn"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+
+              <div class="space-y-3 lg:col-span-2">
+                <label class="text-xl text-color-heading font-bold" for="message">
+                  Message
+                </label>
+
+                <textarea
+                  class="textarea w-full h-[40vh] lg:h-[50vh] bg-[#F8F8F8]"
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+
+              <div class="lg:col-span-2">
+                <button
+                  class="btn text-xl font-bold bg-primary-color w-full text-white hover:bg-slate-400">
+                    Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center flex flex-col items-center space-y-4 mb-10 lg:mb-20 mt-20 bg-[#F8F8F8] py-10">
+          <h4 class="text-2xl font-extrabold text-color-heading">Social Media</h4>
+          <div class="flex gap-5 text-2xl font-extrabold text-color-heading">
+            <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+          </div>
         </div>
       </section>
     </main>
