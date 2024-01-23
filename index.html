@@ -85,7 +85,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold"
+            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold gap-0 -ml-6"
               >Hockey<span class="text-primary-color">’</span>s</a
             >
           </div>
@@ -98,7 +98,7 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end gap-5">
+          <div class="navbar-end gap-5 -mr-2">
             <i
               class="fa-solid fa-magnifying-glass hidden lg:flex cursor-pointer"
             ></i>
@@ -317,7 +317,7 @@
         >
           <!-- 1st grid -->
           <div
-            class="bg-[url('./images/2.png')] row-span-1 lg:row-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
+            class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./images/2.png')] row-span-1 lg:row-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
           >
             <div class="space-y-4">
               <h3 class="text-white text-2xl font-extrabold">Junior Program</h3>
@@ -334,7 +334,7 @@
           </div>
           <!-- 2nd grid -->
           <div
-            class="bg-[url('./images/3.png')] row-span-1 lg:row-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
+            class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./images/3.png')] row-span-1 lg:row-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
           >
             <div class="space-y-4">
               <h3 class="text-white text-2xl font-extrabold">
@@ -353,7 +353,7 @@
           </div>
           <!-- 3rd grid -->
           <div
-            class="bg-[url('./images/4.png')] row-span-1 lg:row-span-3 lg:col-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
+            class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./images/4.png')] row-span-1 lg:row-span-3 lg:col-span-2 bg-no-repeat bg-cover bg-center rounded-2xl flex items-center lg:items-end p-4 lg:p-10"
           >
             <div class="space-y-4 w-full lg:w-1/2">
               <h3 class="text-white text-2xl font-extrabold">
@@ -810,7 +810,10 @@
               </div>
 
               <div class="space-y-3">
-                <label class="text-xl text-color-heading font-bold" for="subject">
+                <label
+                  class="text-xl text-color-heading font-bold"
+                  for="subject"
+                >
                   Subject
                 </label>
 
@@ -838,7 +841,10 @@
               </div>
 
               <div class="space-y-3 lg:col-span-2">
-                <label class="text-xl text-color-heading font-bold" for="message">
+                <label
+                  class="text-xl text-color-heading font-bold"
+                  for="message"
+                >
                   Message
                 </label>
 
@@ -850,26 +856,89 @@
 
               <div class="lg:col-span-2">
                 <button
-                  class="btn text-xl font-bold bg-primary-color w-full text-white hover:bg-slate-400">
-                    Send Message
+                  class="btn text-xl font-bold bg-primary-color w-full text-white hover:bg-slate-400"
+                >
+                  Send Message
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="text-center flex flex-col items-center space-y-4 mb-10 lg:mb-20 mt-20 bg-[#F8F8F8] py-10">
-          <h4 class="text-2xl font-extrabold text-color-heading">Social Media</h4>
+        <div
+          class="text-center flex flex-col items-center space-y-4 mb-10 lg:mb-20 mt-20 bg-[#F8F8F8] py-10"
+        >
+          <h4 class="text-2xl font-extrabold text-color-heading">
+            Social Media
+          </h4>
           <div class="flex gap-5 text-2xl font-extrabold text-color-heading">
             <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <!-- footer section -->
+    <footer class="bg-black mt-20">
+      <div
+        class="container mx-auto px-3 lg:px-6 py-32 grid grid-cols-1 lg:grid-cols-5 gap-6"
+      >
+        <!-- get in touch -->
+        <div class="lg:col-span-2 text-center lg:text-left">
+          <div class="space-y-5 ">
+            <h4 class="text-[#FFF] text-2xl font-extrabold">Get In Touch</h4>
+            <p class="text-[#FFFFFF99] text-base font-medium">
+              I'm here to help and provide information! If you have any questions
+              or if there's something specific ok but it is very important.
+            </p>
+  
+            <p>
+              <i class="fa-solid fa-envelope text-red-600"></i>
+              <span class="text-[#FFFFFF99]">hockeys@support.com</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone text-red-600"></i>
+              <span class="text-[#FFFFFF99]">(+62) 123-321-543</span>
+            </p>
+          </div>
+        </div>
+        <!-- company and support -->
+
+        <div class="lg:col-span-2 flex gap-14" >
+          <div class="space-y-5 lg:pr-10 lg:ml-14 text-center lg:text-left">
+            <h4 class="text-[#FFF] text-xl font-bold">Company</h4>
+            <p class="text-[#FFFFFF99] text-base font-medium">About Us</p>
+            <p class="text-[#FFFFFF99] text-base font-medium">Leadership</p>
+            <p class="text-[#FFFFFF99] text-base font-medium">Careers</p>
+            <p class="text-[#FFFFFF99] text-base font-medium">News & Article</p>
+            <p class="text-[#FFFFFF99] text-base font-medium">Legal Notice</p>
+          </div>
+  
+          <div class="space-y-5 ml-10 lg:ml-16 text-center lg:text-left">
+            <h4 class="text-[#FFF] text-xl font-bold">Support</h4>
+            <p class="text-[#FFFFFF99] text-base font-medium">HelpCenter</p>
+            <p class="text-[#FFFFFF99] text-base font-medium">FAQ</p>
+            <p class="text-[#FFFFFF99] text-base font-medium">Ticket Support</p>
+            <p class="text-[#FFFFFF99] text-base font-medium">Contact Us</p>
+          </div>
+        </div>
+
+        <!-- services -->
+
+        <div class="space-y-5  lg:ml-16 text-center lg:text-left">
+          <h4 class="text-[#FFF] text-xl font-bold">Services</h4>
+          <p class="text-[#FFFFFF99] text-base font-medium">Academy</p>
+          <p class="text-[#FFFFFF99] text-base font-medium">group Lesson</p>
+          <p class="text-[#FFFFFF99] text-base font-medium">Private Lesson</p>
+          <p class="text-[#FFFFFF99] text-base font-medium">Hockeys for Kids</p>
+          <p class="text-[#FFFFFF99] text-base font-medium">
+            Hockeys for Adult
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
